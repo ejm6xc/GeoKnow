@@ -8,6 +8,9 @@ group = 'CS4500.GeoKnow'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+apply plugin: 'maven-publish'
+apply plugin: 'java'
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor

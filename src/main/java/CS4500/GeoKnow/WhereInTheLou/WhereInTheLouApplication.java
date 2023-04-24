@@ -13,7 +13,7 @@ public class WhereInTheLouApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WhereInTheLouApplication.class, args);
 	}
-	@GetMapping("/hello")
+	@GetMapping("/api/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
 	}
